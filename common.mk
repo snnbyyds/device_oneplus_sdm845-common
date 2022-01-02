@@ -452,6 +452,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 
+# Updater
+PRODUCT_PACKAGES += \
+    Updater
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
