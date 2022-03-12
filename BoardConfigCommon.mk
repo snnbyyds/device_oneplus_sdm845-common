@@ -1,17 +1,7 @@
-
 # Copyright (C) 2018 The LineageOS Project
+#               2022 The Evolution X Project
 #
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#      http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
+# SPDX-License-Identifier: Apache-2.0
 #
 
 BUILD_BROKEN_DUP_RULES := true
@@ -51,7 +41,7 @@ BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_CONFIG := enchilada_defconfig
+TARGET_KERNEL_CONFIG := evo_defconfig
 TARGET_KERNEL_SOURCE := kernel/oneplus/sdm845
 
 # Platform
@@ -146,13 +136,6 @@ VENDOR_SECURITY_PATCH := 2021-11-01
 include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
 
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
-PRODUCT_PUBLIC_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/public
-PRODUCT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
-
-# Trust
-TARGET_TRUST_USB_CONTROL_PATH := /sys/devices/platform/soc/a600000.ssusb/usb_data_enabled
-TARGET_TRUST_USB_CONTROL_ENABLE := 0
-TARGET_TRUST_USB_CONTROL_DISABLE := 1
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
