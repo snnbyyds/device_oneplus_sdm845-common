@@ -187,6 +187,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     init.class_main.sh \
+    init.device_extras.rc \
     init.evolution.rc \
     init.oem.rc \
     init.qcom.class_core.sh \
@@ -203,6 +204,11 @@ PRODUCT_PACKAGES += \
 # Component overrides
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
+
+# DeviceExtras
+PRODUCT_PACKAGES += \
+    DeviceExtras \
+    tri-state-key_daemon.vendor
 
 # Display
 PRODUCT_PACKAGES += \

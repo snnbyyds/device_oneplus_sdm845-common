@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2021-2022 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+
+     <!-- Sensor to be used on pickup -->
+    <string name="sensor_pickup">oneplus.sensor.pickup</string>
+
+     <!-- Sensor to be used on pocket removal -->
+    <string name="sensor_pocket">oneplus.sensor.pocket</string>
+</resources>
