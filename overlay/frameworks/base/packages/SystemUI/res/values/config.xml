@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+ <?xml version="1.0" encoding="utf-8"?>
 <!--
 /*
 ** Copyright 2015, The Android Open Source Project
@@ -22,4 +22,7 @@
 <resources>
     <!-- Doze: does this device support STATE_DOZE?  -->
     <bool name="doze_display_state_supported">true</bool>
+
+    <!-- Udfps vendor code -->
+    <integer name="config_udfps_vendor_code">0</integer>
 </resources>
