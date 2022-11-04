@@ -2,12 +2,13 @@ typeattribute system_app system_writes_vendor_properties_violators;
 
 set_prop(system_app, vendor_nfc_prop)
 
-# OnePlusExtras
+# DeviceExtras
 rw_dir_file(system_app, sysfs_dm)
 rw_dir_file(system_app, sysfs_fastcharge)
-rw_dir_file(system_app, sysfs_sync)
-rw_dir_file(system_app, sysfs_vibrator)
-rw_dir_file(system_app, sysfs_workqueue)
 rw_dir_file(system_app, sysfs_sound_control)
+rw_dir_file(system_app, sysfs_sync)
 rw_dir_file(system_app, sysfs_tri_state_key)
 rw_dir_file(system_app, sysfs_usb_supply)
+rw_dir_file(system_app, sysfs_vibrator)
+rw_dir_file(system_app, sysfs_workqueue) 
+
