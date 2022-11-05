@@ -101,6 +101,9 @@ AB_OTA_POSTINSTALL_CONFIG += \
 PRODUCT_PACKAGES += \
     otapreopt_script
 
+PRODUCT_PACKAGES += \
+    Updates
+
 # OPTIONAL=false so that the error in check_dynamic_partitions will be
 # propagated to OTA client.
 AB_OTA_POSTINSTALL_CONFIG += \
