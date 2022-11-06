@@ -61,5 +61,6 @@
         <item>org.lineageos.aperture</item>
         <item>org.lineageos.aperture.dev</item>
         <item>org.pixelexperience.faceunlock</item>
+        <item>com.google.android.GoogleCamera</item>
     </string-array>
 </resources>
