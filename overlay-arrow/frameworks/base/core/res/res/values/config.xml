@@ -58,7 +58,7 @@
         <item>com.oneplus.camera</item>
         <item>com.oneplus.camera.service</item>
         <item>org.codeaurora.snapcam</item>
-        <item>com.android.MGC_8_7_165</item>
+        <item>com.google.android.GoogleCameraEng</item>
         <item>org.lineageos.aperture</item>
         <item>org.lineageos.aperture.dev</item>
     </string-array>
